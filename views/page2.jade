@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Would you like to order
+
+    if message
+        p= message
+    form(class='form-horizontal',action='/',method='POST',id='loginForm')
+        fieldset
+                div.control-group
+                div.controls
+                    button(type='submit',class='btn btn-success') Return to main page

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Way of healthy life!
+
+    if message
+        p= message
+    form(class='form-horizontal',action='/page2',method='POST',id='loginForm')
+        fieldset
+                div.control-group
+                div.controls
+                    button(type='submit',class='btn btn-success') next-page2
+
+
+          
+                  
